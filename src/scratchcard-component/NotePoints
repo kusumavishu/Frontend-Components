@@ -1,0 +1,12 @@
+## Package
+
+npx expo install @shopify/react-native-skia
+
+https://docs.expo.dev/versions/latest/sdk/skia/
+
+https://shopify.github.io/react-native-skia/docs/getting-started/installation/
+
+## Lottie-Animation
+
+npm i lottie-react-native
+https://www.npmjs.com/package/lottie-react-native
