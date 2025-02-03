@@ -1,19 +1,17 @@
-import { StyleSheet, Text, View } from "react-native";
+import { SafeAreaView, StyleSheet, Text, View } from "react-native";
 import AllComponents from "./src/AllComponents";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 export default function App() {
   return (
-    <View>
-      <AllComponents />
-    </View>
+    <>
+      <SafeAreaView style={{ flex: 1 }}>
+        <GestureHandlerRootView>
+          <AllComponents />
+        </GestureHandlerRootView>
+      </SafeAreaView>
+    </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+const styles = StyleSheet.create({});
