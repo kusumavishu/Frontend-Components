@@ -5,6 +5,7 @@ import AnimatedTileScrolling from "./animation-image-scrolling/image-scrolling";
 import MoviesSeating from "./movie-seating-arrangement/seating-booking";
 import SplashAnimation from "./animation-splash-display/splash-animation";
 import YoutubeComponent from "./youtube-player/youtube-component";
+import PriceRangeSelector from "./price-range-slider/input-range";
 
 const AllComponents = () => {
   return (
@@ -12,7 +13,8 @@ const AllComponents = () => {
       {/* <AnimatedTileScrolling /> */}
       {/* <MoviesSeating /> */}
       {/* <SplashAnimation /> */}
-      <YoutubeComponent />
+      {/* <YoutubeComponent /> */}
+      <PriceRangeSelector />
     </View>
   );
 };
