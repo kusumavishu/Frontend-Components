@@ -11,6 +11,7 @@
   "dependencies": {
     "@shopify/react-native-skia": "1.2.3",
     "expo": "~51.0.28",
+    "expo-splash-screen": "~0.27.7",
     "expo-status-bar": "~1.12.1",
     "lottie-react-native": "6.7.0",
     "nativewind": "^2.0.11",
@@ -18,7 +19,8 @@
     "react-native": "0.74.5",
     "react-native-gesture-handler": "~2.16.1",
     "react-native-reanimated": "~3.10.1",
-    "expo-splash-screen": "~0.27.7"
+    "react-native-webview": "13.8.6",
+    "react-native-youtube-iframe": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

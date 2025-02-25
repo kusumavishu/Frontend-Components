@@ -1,0 +1,19 @@
+git repo
+https://github.com/LonelyCpp/react-native-youtube-iframe/tree/master/src
+
+npm doc 
+https://www.npmjs.com/package/react-native-youtube-iframe
+
+npm i react-native-youtube-iframe
+npm install react-native-youtube-iframe --legacy-peer-deps
+
+npm install react-native-youtube-iframe react-native-webview
+
+
+issues 
+✖ [Check that packages match versions required by installed Expo SDK]
+The following packages should be updated for best compatibility with the installed expo version:
+  react-native-webview@13.13.2 - expected version: 13.8.6
+
+
+npx expo install --check
