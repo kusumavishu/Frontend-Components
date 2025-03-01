@@ -6,15 +6,21 @@ import MoviesSeating from "./movie-seating-arrangement/seating-booking";
 import SplashAnimation from "./animation-splash-display/splash-animation";
 import YoutubeComponent from "./youtube-player/youtube-component";
 import PriceRangeSelector from "./price-range-slider/input-range";
+import SeatSelectionScreen from "./movie-seating-arrangement/mini-map";
+import ScrollViewAnimatedHeader from "./header-animation-comp/scrolling-animation";
+import HeaderFlastlist from "./header-animation-comp/scrolling-flastlist";
 
 const AllComponents = () => {
   return (
     <View style={{ flex: 1 }}>
       {/* <AnimatedTileScrolling /> */}
+      {/* <HeaderFlastlist/> */}
+      <ScrollViewAnimatedHeader />
       {/* <MoviesSeating /> */}
       {/* <SplashAnimation /> */}
       {/* <YoutubeComponent /> */}
-      <PriceRangeSelector />
+      {/* <PriceRangeSelector /> */}
+      {/* <SeatSelectionScreen /> */}
     </View>
   );
 };
