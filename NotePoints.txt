@@ -32,3 +32,8 @@ presets: ["babel-preset-expo"],
 plugins: ["nativewind/babel"],
 };
 };
+
+## Stack Navigation Implementation
+npm install @react-navigation/native@6.1.18
+npx expo install react-native-screens react-native-safe-area-context
+npm install @react-navigation/native-stack@6.11.0
