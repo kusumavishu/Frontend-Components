@@ -4,14 +4,25 @@ import { NavigationContainer, useNavigation } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import PriceRangeSelector from "./price-range-slider/input-range";
-
 //Tab Bar imports
 import HomeScreen from "./tabs-comp/home";
 import Explore from "./tabs-comp/explore";
 import Create from "./tabs-comp/create";
 import Profile from "./tabs-comp/profile";
 import TabBar from "./tabs-comp/custom-tab-component/TabBar";
+
+import AllStack from "./all-stack";
+
+import PriceRangeSelector from "./price-range-slider/input-range";
+import YoutubeComponent from "./youtube-player/youtube-component";
+import YouTubePlayer from "./youtube-player/youtube-embed";
+import ScratchCardComp from "./scratchcard-component/scratch-card-comp";
+import AnimatedTileScrolling from "./animation-image-scrolling/image-scrolling";
+import SplashAnimation from "./animation-splash-display/splash-animation";
+import ScrollViewAnimatedHeader from "./header-animation-comp/scrolling-animation";
+import HeaderFlastlist from "./header-animation-comp/scrolling-flastlist";
+import MoviesSeating from "./movie-seating-arrangement/seating-booking";
+import SeatSelectionScreen from "./movie-seating-arrangement/mini-map";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -24,7 +35,7 @@ const Welcome = () => {
       <Button
         title="let explore more ..."
         onPress={() => {
-          navigation.navigate("MyTabs");
+          navigation.navigate("All Stacks");
         }}
       />
     </View>
@@ -71,7 +82,38 @@ const AllComponents = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Kusuma Vishwesh" component={Welcome} />
+        <Stack.Screen
+          name="All Stacks"
+          component={AllStack}
+          options={{ headerShown: false }}
+        />
         <Stack.Screen name="MyTabs" component={MyTabs} />
+        <Stack.Screen name="YoutubeComponent" component={YoutubeComponent} />
+        <Stack.Screen
+          name="YouTubePlayer"
+          component={YouTubePlayer}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen name="ScratchCardComp" component={ScratchCardComp} />
+        <Stack.Screen
+          name="PriceRangeSelector"
+          component={PriceRangeSelector}
+        />
+        <Stack.Screen
+          name="AnimatedTileScrolling"
+          component={AnimatedTileScrolling}
+        />
+        <Stack.Screen name="SplashAnimation" component={SplashAnimation} />
+        <Stack.Screen
+          name="ScrollViewAnimatedHeader"
+          component={ScrollViewAnimatedHeader}
+        />
+        <Stack.Screen name="HeaderFlastlist" component={HeaderFlastlist} />
+        <Stack.Screen name="MoviesSeating" component={MoviesSeating} />
+        <Stack.Screen
+          name="SeatSelectionScreen"
+          component={SeatSelectionScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

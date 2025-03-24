@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#f5f5f5",
   },
   scratchCard: {
-    marginTop: "100%",
+    // marginTop: "100%",
     width: 300,
     height: 300,
   },

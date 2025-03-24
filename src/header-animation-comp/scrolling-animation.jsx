@@ -241,7 +241,7 @@ export default function ScrollViewAnimatedHeader() {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 50,
+    // marginTop: 50,
   },
   item: {
     height: 100,

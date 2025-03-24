@@ -1,23 +1,3 @@
-// import { StyleSheet, Text, View } from "react-native";
-// import React from "react";
-
-// const InputRange = () => {
-//   return (
-//     <View>
-//       <Text>InputRange</Text>
-//       <Text>InputRange</Text>
-//       <Text>InputRange</Text>
-//       <Text>InputRange</Text>
-//     </View>
-//   );
-// };
-
-// export default InputRange;
-
-// const styles = StyleSheet.create({});
-
-// --------------
-
 import React, { useEffect, useRef, useState } from "react";
 import {
   Animated,
