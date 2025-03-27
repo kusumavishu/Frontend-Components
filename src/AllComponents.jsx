@@ -23,6 +23,9 @@ import ScrollViewAnimatedHeader from "./header-animation-comp/scrolling-animatio
 import HeaderFlastlist from "./header-animation-comp/scrolling-flastlist";
 import MoviesSeating from "./movie-seating-arrangement/seating-booking";
 import SeatSelectionScreen from "./movie-seating-arrangement/mini-map";
+import ToastNotify from "./custom-toast/toast-notify";
+import PrivacyPolicy from "./youtube-player/AllonsZ";
+import CallingScreen from "./date-time-picker/caalling-screen";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -113,6 +116,17 @@ const AllComponents = () => {
         <Stack.Screen
           name="SeatSelectionScreen"
           component={SeatSelectionScreen}
+        />
+        <Stack.Screen name="ToastNotify" component={ToastNotify} />
+        <Stack.Screen
+          name="AllonsZ"
+          component={PrivacyPolicy}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="CallingScreen"
+          component={CallingScreen}
+          options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>

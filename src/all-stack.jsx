@@ -76,6 +76,11 @@ const AllStack = () => {
         <HeaderTitle HeaderTitle="gesture-handler & movie Booking" />
         <ButtonCom title="Movies Seating" result="MoviesSeating" />
         <ButtonCom title="Movies tickets Layout" result="SeatSelectionScreen" />
+        {/*  */}
+        <HeaderTitle HeaderTitle="Custom Toast Notification" />
+        <ButtonCom title="Movies Seating" result="MoviesSeating" />
+        <ButtonCom title="AllonsZ" result="AllonsZ" />
+        <ButtonCom title="CallingScreen" result="CallingScreen" />
       </ScrollView>
     </View>
   );
