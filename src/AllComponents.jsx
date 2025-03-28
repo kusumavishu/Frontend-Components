@@ -26,6 +26,7 @@ import SeatSelectionScreen from "./movie-seating-arrangement/mini-map";
 import ToastNotify from "./custom-toast/toast-notify";
 import PrivacyPolicy from "./youtube-player/AllonsZ";
 import CallingScreen from "./date-time-picker/caalling-screen";
+import NativeMaps from "./react-native-maps/native-maps";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -126,6 +127,11 @@ const AllComponents = () => {
         <Stack.Screen
           name="CallingScreen"
           component={CallingScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="NativeMaps"
+          component={NativeMaps}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

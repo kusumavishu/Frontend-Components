@@ -35,53 +35,64 @@ const AllStack = () => {
   const navigation = useNavigation();
   return (
     <View className="flex-1 bg-green-100">
-      <ScrollView
-        contentContainerStyle={{
-          flexGrow: 1,
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <HeaderTitle HeaderTitle="Tab Bar component" />
-        {/*  */}
-        <ButtonCom title="Custom TabBar" result="MyTabs" />
-        {/*  */}
-        <HeaderTitle HeaderTitle="YouTube Player component" />
-        {/*  */}
-        <ButtonCom title="YouTube with iFrame" result="YoutubeComponent" />
-        <ButtonCom title="YouTube with WebView" result="YouTubePlayer" />
-        {/*  */}
-        <HeaderTitle HeaderTitle="Skia components & Reanimation" />
+      <View className="mt-10">
+        <ScrollView
+          contentContainerStyle={{
+            flexGrow: 1,
+            paddingBottom: 35,
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <HeaderTitle HeaderTitle="Tab Bar component" />
+          {/*  */}
+          <ButtonCom title="Custom TabBar" result="MyTabs" />
+          {/*  */}
+          <HeaderTitle HeaderTitle="YouTube Player component" />
+          {/*  */}
+          <ButtonCom title="YouTube with iFrame" result="YoutubeComponent" />
+          <ButtonCom title="YouTube with WebView" result="YouTubePlayer" />
+          {/*  */}
+          <HeaderTitle HeaderTitle="Skia components & Reanimation" />
 
-        <ButtonCom title="Scratch Card with Skia" result="ScratchCardComp" />
-        <ButtonCom
-          title="Price Range Selector Card"
-          result="PriceRangeSelector"
-        />
-        <ButtonCom
-          title="Animated Tile Scrolling"
-          result="AnimatedTileScrolling"
-        />
-        <ButtonCom title="Splash Animation" result="SplashAnimation" />
-        {/*  */}
-        <HeaderTitle HeaderTitle="header components & Reanimation" />
-        <ButtonCom
-          title="Animated Header with ScrollView"
-          result="ScrollViewAnimatedHeader"
-        />
-        <ButtonCom
-          title="Animated Header with Flastlist"
-          result="HeaderFlastlist"
-        />
-        <HeaderTitle HeaderTitle="gesture-handler & movie Booking" />
-        <ButtonCom title="Movies Seating" result="MoviesSeating" />
-        <ButtonCom title="Movies tickets Layout" result="SeatSelectionScreen" />
-        {/*  */}
-        <HeaderTitle HeaderTitle="Custom Toast Notification" />
-        <ButtonCom title="Movies Seating" result="MoviesSeating" />
-        <ButtonCom title="AllonsZ" result="AllonsZ" />
-        <ButtonCom title="CallingScreen" result="CallingScreen" />
-      </ScrollView>
+          <ButtonCom title="Scratch Card with Skia" result="ScratchCardComp" />
+          <ButtonCom
+            title="Price Range Selector Card"
+            result="PriceRangeSelector"
+          />
+          <ButtonCom
+            title="Animated Tile Scrolling"
+            result="AnimatedTileScrolling"
+          />
+          <ButtonCom title="Splash Animation" result="SplashAnimation" />
+          {/*  */}
+          <HeaderTitle HeaderTitle="header components & Reanimation" />
+          <ButtonCom
+            title="Animated Header with ScrollView"
+            result="ScrollViewAnimatedHeader"
+          />
+          <ButtonCom
+            title="Animated Header with Flastlist"
+            result="HeaderFlastlist"
+          />
+          <HeaderTitle HeaderTitle="gesture-handler & movie Booking" />
+          <ButtonCom title="Movies Seating" result="MoviesSeating" />
+          <ButtonCom
+            title="Movies tickets Layout"
+            result="SeatSelectionScreen"
+          />
+          {/*  */}
+          <HeaderTitle HeaderTitle="Custom Toast Notification" />
+          <ButtonCom title="Toast Notification" result="ToastNotify" />
+
+          <HeaderTitle HeaderTitle="Date and Time Picker" />
+          {/* <ButtonCom title="AllonsZ" result="AllonsZ" /> */}
+          <ButtonCom title="CallingScreen" result="CallingScreen" />
+
+          <HeaderTitle HeaderTitle="React Native Maps modules" />
+          <ButtonCom title="Native Maps" result="NativeMaps" />
+        </ScrollView>
+      </View>
     </View>
   );
 };
