@@ -91,6 +91,9 @@ const AllStack = () => {
 
           <HeaderTitle HeaderTitle="React Native Maps modules" />
           <ButtonCom title="Native Maps" result="NativeMaps" />
+          {/*  */}
+          <HeaderTitle HeaderTitle="OTP entry with TextInput" />
+          <ButtonCom title="OTP Entry Array" result="OTPEntryArray" />
         </ScrollView>
       </View>
     </View>

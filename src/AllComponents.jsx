@@ -27,6 +27,7 @@ import ToastNotify from "./custom-toast/toast-notify";
 import PrivacyPolicy from "./youtube-player/AllonsZ";
 import CallingScreen from "./date-time-picker/caalling-screen";
 import NativeMaps from "./react-native-maps/native-maps";
+import OtpEntryArray from "./text-otp/otp-entry-array";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -132,6 +133,11 @@ const AllComponents = () => {
         <Stack.Screen
           name="NativeMaps"
           component={NativeMaps}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="OTPEntryArray"
+          component={OtpEntryArray}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
