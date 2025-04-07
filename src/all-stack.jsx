@@ -48,6 +48,9 @@ const AllStack = () => {
           {/*  */}
           <ButtonCom title="Custom TabBar" result="MyTabs" />
           {/*  */}
+          <HeaderTitle HeaderTitle="react-hook-form & @hookform/resolvers yup" />
+          <ButtonCom title="Text Input 01" result="Text-Input" />
+
           <HeaderTitle HeaderTitle="YouTube Player component" />
           {/*  */}
           <ButtonCom title="YouTube with iFrame" result="YoutubeComponent" />
@@ -94,6 +97,7 @@ const AllStack = () => {
           {/*  */}
           <HeaderTitle HeaderTitle="OTP entry with TextInput" />
           <ButtonCom title="OTP Entry Array" result="OTPEntryArray" />
+          <ButtonCom title="2nd OTP Entry" result="OTPEntry2" />
         </ScrollView>
       </View>
     </View>

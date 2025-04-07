@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.0.1",
     "@react-native-community/datetimepicker": "8.0.1",
     "@react-navigation/bottom-tabs": "^6.5.9",
     "@react-navigation/native": "^6.1.18",
@@ -22,6 +23,7 @@
     "lottie-react-native": "6.7.0",
     "nativewind": "^2.0.11",
     "react": "18.2.0",
+    "react-hook-form": "^7.55.0",
     "react-native": "0.74.5",
     "react-native-gesture-handler": "~2.16.1",
     "react-native-maps": "1.14.0",
@@ -30,7 +32,9 @@
     "react-native-screens": "3.31.1",
     "react-native-toast-notifications": "^3.4.0",
     "react-native-webview": "13.8.6",
-    "react-native-youtube-iframe": "^2.3.0"
+    "react-native-youtube-iframe": "^2.3.0",
+    "yup": "^1.6.1",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

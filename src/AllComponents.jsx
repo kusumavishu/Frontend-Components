@@ -28,6 +28,8 @@ import PrivacyPolicy from "./youtube-player/AllonsZ";
 import CallingScreen from "./date-time-picker/caalling-screen";
 import NativeMaps from "./react-native-maps/native-maps";
 import OtpEntryArray from "./text-otp/otp-entry-array";
+import OtpEntry2 from "./text-otp/otp-entry-2";
+import InputComp from "./Text-Input/InputComp";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -92,6 +94,11 @@ const AllComponents = () => {
           component={AllStack}
           options={{ headerShown: false }}
         />
+        <Stack.Screen
+          name="Text-Input"
+          component={InputComp}
+          options={{ headerShown: true }}
+        />
         <Stack.Screen name="MyTabs" component={MyTabs} />
         <Stack.Screen name="YoutubeComponent" component={YoutubeComponent} />
         <Stack.Screen
@@ -138,6 +145,11 @@ const AllComponents = () => {
         <Stack.Screen
           name="OTPEntryArray"
           component={OtpEntryArray}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="OTPEntry2"
+          component={OtpEntry2}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
