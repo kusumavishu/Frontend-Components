@@ -30,6 +30,7 @@ import NativeMaps from "./react-native-maps/native-maps";
 import OtpEntryArray from "./text-otp/otp-entry-array";
 import OtpEntry2 from "./text-otp/otp-entry-2";
 import InputComp from "./Text-Input/InputComp";
+import SeatArrangements from "./movie-seating-arrangement/seat-arrangements";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -67,6 +68,7 @@ const CustomHeader = () => {
   );
 };
 
+//custom-tab-components
 function MyTabs() {
   return (
     <Tab.Navigator
@@ -122,6 +124,7 @@ const AllComponents = () => {
         />
         <Stack.Screen name="HeaderFlastlist" component={HeaderFlastlist} />
         <Stack.Screen name="MoviesSeating" component={MoviesSeating} />
+        <Stack.Screen name="SeatArrangements" component={SeatArrangements} />
         <Stack.Screen
           name="SeatSelectionScreen"
           component={SeatSelectionScreen}

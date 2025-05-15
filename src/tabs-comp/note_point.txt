@@ -1,1 +1,22 @@
 npm install @react-navigation/bottom-tabs@6.5.9
+
+------------------------------------------------------------------
+//custom-tab-components should add in main component
+
+function MyTabs() {
+  return (
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: true,
+        header: () => <CustomHeader />, // Custom header
+      }}
+      tabBar={(props) => <TabBar {...props} />} // Custom TabBar
+    >
+      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Explore" component={Explore} />
+      <Tab.Screen name="Create" component={Create} />
+      <Tab.Screen name="Profile" component={Profile} />
+    </Tab.Navigator>
+  );
+}
+------------------------------------------------------------------

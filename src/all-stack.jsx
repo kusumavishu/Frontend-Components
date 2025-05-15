@@ -84,6 +84,7 @@ const AllStack = () => {
             title="Movies tickets Layout"
             result="SeatSelectionScreen"
           />
+          <ButtonCom title="SeatArrangements" result="SeatArrangements" />
           {/*  */}
           <HeaderTitle HeaderTitle="Custom Toast Notification" />
           <ButtonCom title="Toast Notification" result="ToastNotify" />
