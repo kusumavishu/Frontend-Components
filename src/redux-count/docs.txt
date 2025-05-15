@@ -1,0 +1,6 @@
+# redux Implementation
+npm i react-redux
+npm install @reduxjs/toolkit
+
+
+* <Provider store={Store}> in main layout

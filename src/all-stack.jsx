@@ -99,6 +99,9 @@ const AllStack = () => {
           <HeaderTitle HeaderTitle="OTP entry with TextInput" />
           <ButtonCom title="OTP Entry Array" result="OTPEntryArray" />
           <ButtonCom title="2nd OTP Entry" result="OTPEntry2" />
+          {/*  */}
+          <HeaderTitle HeaderTitle="Redux Implementation" />
+          <ButtonCom title="Redux" result="MainRedux" />
         </ScrollView>
       </View>
     </View>

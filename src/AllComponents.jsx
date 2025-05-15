@@ -31,6 +31,7 @@ import OtpEntryArray from "./text-otp/otp-entry-array";
 import OtpEntry2 from "./text-otp/otp-entry-2";
 import InputComp from "./Text-Input/InputComp";
 import SeatArrangements from "./movie-seating-arrangement/seat-arrangements";
+import MainRedux from "./redux-count/main-redux";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -153,6 +154,11 @@ const AllComponents = () => {
         <Stack.Screen
           name="OTPEntry2"
           component={OtpEntry2}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="MainRedux"
+          component={MainRedux}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
