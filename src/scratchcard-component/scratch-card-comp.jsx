@@ -5,10 +5,12 @@ import { useImage } from "@shopify/react-native-skia";
 import ScratchCard from "./animation-scratch-card";
 
 const ScratchCardComp = () => {
-  const image = useImage(require("./images/scratch_foreground.png")); // Replace
+  const image = useImage(require("./images/A.png")); // Replace
+
   if (!image) {
     return <Text>Loading....</Text>;
   }
+
   return (
     <View style={styles.container}>
       <ScratchCard style={styles.scratchCard} image={image}>
