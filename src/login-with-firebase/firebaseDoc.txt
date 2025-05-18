@@ -114,3 +114,6 @@ if with out firebase
 ================================================
 steps to Single tap login with Facebook
 
+install the package npm i react-native-fbsdk-next
+
+
