@@ -1,0 +1,116 @@
+🔥 What is Firebase?
+
+Firebase is a Backend-as-a-Service (BaaS) platform developed by Google. It offers tools and services to help developers build high-quality apps quickly. 
+
+Firebase provides:
+ - Realtime Database & Firestore: NoSQL cloud databases.
+ - Cloud Storage: For images, videos, etc.
+ - Authentication: User login with email/password, Google, Facebook, etc.
+ - Push Notifications: Via Firebase Cloud Messaging (FCM).
+ - Analytics, Crashlytics, and more.
+
+📱 How to Implement Firebase (using React Native Firebase)
+ref link : https://rnfirebase.io/
+
+
+To install React Native Firebase's base app module, use the command 
+npx expo install firebase (*)
+npx expo install @react-native-firebase/app
+npx expo install @react-native-firebase/auth 
+npx expo install @react-native-firebase/crashlytics   {no}
++ npx expo install expo-build-properties
+
+
+ ** To enable Firebase on the native Android and iOS platforms, 
+create and download Service Account files for each platform from your Firebase project. 
+Then provide paths to the downloaded google-services.json and GoogleService-Info.plist files in the following app.json fields:
+expo.android.googleServicesFile and expo.ios.googleServicesFile. See the example configuration below.
+
+-----------------------------------------------------
+{
+  "expo": {
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "package": "com.mycorp.myapp"
+    },
+    "ios": {
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "bundleIdentifier": "com.mycorp.myapp"
+    },
+    "plugins": [
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth",
+      "@react-native-firebase/crashlytics",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ]
+  }
+}
+-----------------------------------------------------------------
+
+===================================================================
+in Parallel
+
+✅ Step-by-Step Setup for Firebase Google Sign-In in React Native (Expo Dev Build)
+
+✅ 1. Create a Firebase Project
+
+    - Go to Firebase Console
+    - Click Add project
+    - Enable Google Sign-In under:
+    Authentication > Sign-in method > Google
+
+✅ 2. Set Up Google Sign-In in Firebase Auth
+
+In your Firebase Console:
+ - Go to Authentication > Sign-in method
+ - Enable Google
+ - Add your SHA-1 and SHA-256 fingerprint from your dev keystore or generated via keytool or Firebase CLI.
+
+
+===============
+check for social login 
+https://rnfirebase.io/auth/social-auth
+https://rnfirebase.io/auth/usage
+
+============================
+@react-native-google-signin/google-signin
+
+
+if with out firebase 
+"expo": {
+    "plugins": [
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps._some_id_here_"
+        }
+      ]
+    ]
+  }
+
+
+
+  with firebase 
+  {
+  "expo": {
+    "plugins": ["@react-native-google-signin/google-signin"],   // we have to add this 
+    "android": {
+      "googleServicesFile": "./google-services.json"
+    },
+    "ios": {
+      "googleServicesFile": "./GoogleService-Info.plist"
+    }
+  }
+}
+
+
+================================================
+steps to Single tap login with Facebook
+

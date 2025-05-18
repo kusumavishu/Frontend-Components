@@ -33,6 +33,9 @@ import InputComp from "./Text-Input/InputComp";
 import SeatArrangements from "./movie-seating-arrangement/seat-arrangements";
 import MainRedux from "./redux-count/main-redux";
 
+import AuthLoginFirebase from "./login-with-firebase/auth-login-firebase";
+import SigninWithGoogle from "./login-with-firebase/signin-with-google";
+
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -159,6 +162,16 @@ const AllComponents = () => {
         <Stack.Screen
           name="MainRedux"
           component={MainRedux}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="AuthLoginFirebase"
+          component={AuthLoginFirebase}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="SigninWithGoogle"
+          component={SigninWithGoogle}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

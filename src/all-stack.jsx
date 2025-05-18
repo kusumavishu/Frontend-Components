@@ -102,6 +102,10 @@ const AllStack = () => {
           {/*  */}
           <HeaderTitle HeaderTitle="Redux Implementation" />
           <ButtonCom title="Redux" result="MainRedux" />
+          {/*  */}
+          <HeaderTitle HeaderTitle="Single Tap Loing with FireBase" />
+          <ButtonCom title="AuthLoginFirebase" result="AuthLoginFirebase" />
+          <ButtonCom title="SigninWithGoogle" result="SigninWithGoogle" />
         </ScrollView>
       </View>
     </View>
