@@ -16,7 +16,6 @@ const SigninWithGoogle = () => {
   GoogleSignin.configure({
     webClientId:
       "932269768116-lpbnda0i5p6ivjvci2e3tu9metvfuf83.apps.googleusercontent.com",
-
     scopes: [
       "profile",
       "email",
@@ -38,29 +37,45 @@ const SigninWithGoogle = () => {
   }, []);
 
   async function onGoogleButtonPress() {
-    // Check if your device supports Google Play
-    await GoogleSignin.hasPlayServices({ showPlayServicesUpdateDialog: true });
-    // Get the users ID token
-    const signInResult = await GoogleSignin.signIn();
+    try {
+      console.log("Google button pressed");
+      // Check if your device supports Google Play
+      await GoogleSignin.hasPlayServices({
+        showPlayServicesUpdateDialog: true,
+      });
+      // Get the users ID token
 
-    // Try the new style of google-sign in result, from v13+ of that module
-    idToken = signInResult.data?.idToken;
+      console.log("Signing in with Google");
+      const signInResult = await GoogleSignin.signIn();
 
-    if (!idToken) {
-      idToken = signInResult.idToken;
+      console.log("Sign-in result:", signInResult);
+
+      // Try the new style of google-sign in result, from v13+ of that module
+
+      // let idToken = signInResult.idToken || signInResult.data?.idToken;
+
+      idToken = signInResult.data?.idToken;
+
+      if (!idToken) {
+        idToken = signInResult.idToken;
+      }
+
+      if (!idToken) {
+        throw new Error("No ID token found");
+      }
+
+      // Create a Google credential with the token
+      const googleCredential = GoogleAuthProvider.credential(
+        signInResult.data.idToken
+      );
+
+      console.log("Google credential:", googleCredential);
+
+      // Sign-in the user with the credential
+      return signInWithCredential(getAuth(), googleCredential);
+    } catch (error) {
+      console.error("Error during Google sign-in:", error);
     }
-
-    if (!idToken) {
-      throw new Error("No ID token found");
-    }
-
-    // Create a Google credential with the token
-    const googleCredential = GoogleAuthProvider.credential(
-      signInResult.data.idToken
-    );
-
-    // Sign-in the user with the credential
-    return signInWithCredential(getAuth(), googleCredential);
   }
 
   async function signOut() {

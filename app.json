@@ -41,6 +41,21 @@
       "@react-native-firebase/auth",
       "@react-native-google-signin/google-signin",
       [
+        "react-native-fbsdk-next",
+        {
+          "appID": "1212616530330909",
+          "clientToken": "1c0be23e9f87096e719e558241b4a8da",
+          "displayName": "Frontend-Components"
+        }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-7507306628873334~3332110421",
+          "iosAppId": "ca-app-pub-7507306628873334~5766702076"
+        }
+      ],
+      [
         "expo-build-properties",
         {
           "ios": {

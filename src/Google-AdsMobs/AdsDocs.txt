@@ -1,0 +1,13 @@
+npm i react-native-google-mobile-ads
+
+android add uit id: ca-app-pub-7507306628873334/6312678745
+ios aduit id:ca-app-pub-7507306628873334/3678776541
+added 
+plugins:
+[
+    "react-native-google-mobile-ads",
+    {
+        "androidAppId": "ca-app-pub-7507306628873334~3332110421",
+        "iosAppId": "ca-app-pub-7507306628873334~5766702076"
+    }
+],

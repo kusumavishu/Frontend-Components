@@ -35,6 +35,8 @@ import MainRedux from "./redux-count/main-redux";
 
 import AuthLoginFirebase from "./login-with-firebase/auth-login-firebase";
 import SigninWithGoogle from "./login-with-firebase/signin-with-google";
+import SignInWithFBSDK from "./login-with-firebase/signin-with-fbsdk";
+import GoogleAdsMob from "./Google-AdsMobs/BannerAds";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -172,6 +174,16 @@ const AllComponents = () => {
         <Stack.Screen
           name="SigninWithGoogle"
           component={SigninWithGoogle}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="SigninWithFBSDK"
+          component={SignInWithFBSDK}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="GoogleAdsMob"
+          component={GoogleAdsMob}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

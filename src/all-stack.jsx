@@ -106,6 +106,10 @@ const AllStack = () => {
           <HeaderTitle HeaderTitle="Single Tap Loing with FireBase" />
           <ButtonCom title="AuthLoginFirebase" result="AuthLoginFirebase" />
           <ButtonCom title="SigninWithGoogle" result="SigninWithGoogle" />
+          <ButtonCom title="SigninWithFBSDK" result="SigninWithFBSDK" />
+
+          <HeaderTitle HeaderTitle="Google Ads" />
+          <ButtonCom title="GoogleAdsMob" result="GoogleAdsMob" />
         </ScrollView>
       </View>
     </View>
